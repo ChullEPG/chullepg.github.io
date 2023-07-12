@@ -1879,6 +1879,63 @@ button,
       #main > .inner > section {
         padding: 3em 0 1em 0 ; } }
 
+/* Popup Box */
+
+.container{
+    width:100%;
+    height:100vh;
+    background: #f5f6f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 1px solid #333;
+    outline: none; 
+    cursor: pointer; 
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    /* put text in middle of button */
+    display: flex;
+    align-items: center;
+}
+.popup{
+    width: 800px;
+    background: rgba(95, 125, 224, 1); /* Set the background color with full opacity */
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%,-50%) scale(0.1);
+    padding: 0 30px 30px 30px;
+    color: #fff;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+
+}
+
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
 /* Sidebar */
 #search form {
   text-decoration: none;
