@@ -1908,13 +1908,12 @@ button,
     border-radius: 5px;
     position: absolute;
     top: 50%;
-    left: 100%;
+    left: 50%;
     transform: translate(-50%,-50%) scale(0.1);
     padding: 0 30px 30px 30px;
     color: #fff;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
-
 }
 
 .popup button{
@@ -1932,7 +1931,9 @@ button,
 }
 .open-popup{
     visibility: visible;
+    position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%) scale(1);
 }
 
