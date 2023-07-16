@@ -1186,6 +1186,7 @@ input[type="radio"] + label:before {
     border: 0;
     border-radius: 0;
     padding: 0; }
+    
 
 /* Icon */
 .icon {
@@ -1245,6 +1246,15 @@ input[type="radio"] + label:before {
     width: 100%; }
     .image.main img {
       width: 100%; }
+/* Image container (for contact form) */
+.imageContainer{
+    Display: flex;
+}
+/* .imagediv {
+    Width: 50%;
+    Background-image: url("images/hiking.JPG")
+
+} */
 
 a.image {
   overflow: hidden; }
