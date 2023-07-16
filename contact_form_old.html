@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Contact - Chris Hull</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="contact_form/css/style.css">
+
+	</head>
+	<body>s
+        <!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+                            <header id="header">
+                                <!-- <a href="index.html" class="logo"><strong>Personal Website</strong> personal website</a> -->
+                                <ul class="icons">
+                                    <a href="https://www.linkedin.com/in/chris-hull-a8735316b/" class = "icon brands fa-linkedin"><span class="label" target ="_blank">LinkedIn</span></a>
+                                    <!--  make email icon appear -->
+                                    <a href="mailto:christopher.hull@eng.ox.ac.uk" class = "icon solid fa-envelope"><span class="label" target ="_blank">Email</span></a>
+                                    <!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                                    <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+                                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                    <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li> -->
+                                </ul>
+                            </header>
+
+                                <!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Projects</h2>
+									</header>
+									<div class="posts">
+										<article>
+											<a onclick = "openBumpy()" class="image"><img src="images/mobility_fourier_sum.png" alt="" /></a>
+											<h3>A Bumpy Ride to Electrification: Paratransit Vehicle Energy Requirements:</h3>
+											<p>Calculating the vehicle energy consumption (kWh/km) for paratransit vehicles. <a href="https://www.sciencedirect.com/science/article/pii/S1361920923000925" target="_blank">"Using High fidelity estimates of paratransit energy consumption from per-second GPS tracking data"</a> for a deeper discussion of the methodology and results. </p>
+                                            
+                                            <button type ="button" class ="button" onclick = "openBumpy()">Details</button>
+                                            <div class ="popup" id = "popup_bumpy">
+                                                <p><li>Tech stack: Python </li>
+                                                    <li><strong>Project Link: </strong><a href = "https://github.com/ChullEPG/Bumpy-Ride" target ="_blank">GitHub URL</a></li></p>
+                                                <p>Constructing a Vehicle energy consumption is a critical parameter for understanding the vehicle design requirements and grid impact of electric vehicles. Thus, it plays an important role in the planning of electric vehicle transitions. Here, I calculate the energy consumption of an electric version of current paratrasit vehicles across various route types using a vehicle force model in Python. The accuracy gains of using high resolution data are explored using Fast Fourier Transformations. See <a href="https://www.sciencedirect.com/science/article/pii/S1361920923000925" target="_blank">Using High fidelity estimates of paratransit energy consumption from per-second GPS tracking data </a> for a deeper discussion of the methodology and results. </p>
+                                                <button type ="button"  onclick = "closeBumpy()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_bumpy = document.getElementById("popup_bumpy");
+                                                
+                                                function openBumpy(){
+                                                    popup_bumpy.classList.add("open-popup");
+                                                }
+                                                function closeBumpy(){
+                                                    popup_bumpy.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+                            
+										<article>
+											<a onclick ="openRDC()" class="image"><img src="images/Routes_3D.jpg" alt="" /></a>
+											<h3>Taxi Drivers Gone Wild: Synthesizing a Representative Driving Cycle for Paratransit Vehicles</h3>
+											<p> Developing the first representative driving cycle for Paratransit vehicles in Sub-Saharan Africa, using a novel time series shape-based clustering methodology.See <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4355437" target="_blank">"Developing a Representative Driving Cycle for Paratransit that Reflects Measured Data Transients: Case Study in Stellenbosch, South Africa"</a> for a deeper discussion. 
+                                            </p>
+
+											<button type ="button" class ="button" onclick = "openRDC()">Details</button>
+                                            <div class ="popup" id = "popup_rdc">
+                                                <p><li>Tech stack: Python, C++ </li>
+                                                    <li><strong>Project Link: </strong><a href = "https://github.com/Battery-Intelligence-Lab/dtw-cpp" target ="_blank">GitHub URL</a></li></p>
+                                                <p> Representative driving cycles, which provide a realistic simulation of the driving conditions a vehicle is likely to encounter, are key to framing policies for efficient transportation management, vehicle design, and urban and regional planning. However, cycle development has been limited in SSA due to a lack of data and standardized testing procedures. Here, I develop a representative driving cycle using GPS data gathered on paratransit vehicles traveling around Stellenbosch, South Africa, providing a benchmark for evaluation and a platform for further research and testing in SSA's dominant transport industry. A novel time series shape-based clustering methodology is employed that all combines dynamic time warping and mixed integer programming to cluster micro-trips of varying length based on their time series shapes. Representative segments from each cluster are stitched together with a maximum likelihood approach to curate the final cycle. By including transients from the measured data in cycle development, this approach to representative driving cycle development is particularly suited for the notoriously unconventional and aggressive driving style of paratransit.</p>
+                                                <button type ="button"  onclick = "closeRDC()">Close</button>
+                                            </div>
+                                            
+                                            <script>
+                                                let popup_rdc = document.getElementById("popup_rdc");
+                                                
+                                                function openRDC(){
+                                                    popup_rdc.classList.add("open-popup");
+                                                }
+                                                function closeRDC(){
+                                                    popup_rdc.classList.remove("open-popup");
+                                                }
+                                            </script>
+
+										</article>
+                                        <article>
+											<a onclick = "openTechnoecon" class="image"><img src="images/PMSM_Efficiency_map.png" alt="" /></a>
+											<h3>Technoeconomic analysis of fleet electrification</h3>
+
+											<p> Developing a tool to quantify the value proposition of fleet electrification for fleet owners considering a shift to EV. This tool was originally developed for <a href = "https://www.zimifleet.com" target="_blank">ZimiCharge</a> and is now open source.</p>
+                                            
+                                            <button type ="button" class ="button" onclick = "openTechnoecon()">Details</button>
+                                            <div class ="popup" id = "popup_technoeconomic">
+                                                <p><li>Tech stack: Python </li>
+                                                    <li><strong>Project Link: </strong><a href = "https://github.com/ChullEPG/ev_fleet_technoeconomic_assessment" target ="_blank">GitHub URL</a></li></p>
+                                                <p> This tool does etc. etc. etc.</p>
+                                                <button type ="button"  onclick = "closeTechnoecon()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_technoeconomic = document.getElementById("popup_technoeconomic");
+                                                
+                                                function openTechnoecon(){
+                                                    popup_technoeconomic.classList.add("open-popup");
+                                                }
+                                                function closeTechnoecon(){
+                                                    popup_technoeconomic.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+										
+										<article>
+											<a onclick = "openSS()" class="image"><img src="images/optimal_solar_storage.png" alt="" /></a>
+											<h3> Optimally sizing solar PV and battery storage for EV charging stations </h3>
+
+											<p> Optimally sizing solar PV and battery storage for EV charging stations </p>
+                                            
+                                            <button type ="button" class ="button" onclick = "openSS()">Details</button>
+                                            <div class ="popup" id = "popup_survey">
+                                                <p><li>Tech stack: Python </li>
+                                                    <li><strong>Project Link: </strong><a href = "https://github.com/ChullEPG/solar_storage_sizing_optimization" target ="_blank">GitHub URL</a></li></p>
+                                                <p> This project involves finding the optimal rating of solar PV and battery energy storage in kW and kWh respectively that maximize the net present value of the investment (to-do: add more description)   </p>
+                                                <button type ="button"  onclick = "closeSS()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_survey = document.getElementById("popup_survey");
+                                                
+                                                function openSS(){
+                                                    popup_survey.classList.add("open-popup");
+                                                }
+                                                function closeSS(){
+                                                    popup_survey.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+										<article>
+											<a  onclick = "openLEO()" class="image"><img src="images/substations_in_oxfordshire.png" alt="" /></a>
+											<h3> Clustering based analysis for Oxford's Substation load data</h3>
+
+											<p> Developing represntative clusters of Oxford's substations, based on 2022 load data. This project was done in service of and funded by <a href = "https://project-leo.co.uk" target ="_blank">Project LEO</a>.</p>
+                                            
+                                            <button type ="button" class ="button" onclick = "openLEO()">Details</button>
+                                            <div class ="popup" id = "popup_LEO">
+                                                <p><li>Tech stack: Python </li>
+                                                    <li><strong>Project Link: </strong><a href = "https://github.com/ChullEPG/leo_substation_analysis" target ="_blank">GitHub URL</a></li></p>
+                                                <p> In order for various stakeholders in power systems to make progress on NET-zero goals, it is necessary to extract and analyze abundant and accurate load characteristics of electricity distribution substations. These substations have a variety of subordinate loads with different characteristics, so it is essential to use proper data mining techniques, such as clustering, to identify underlying patterns and characteristics of demand. In this report, we propose clustering models that take various features of load patterns into account to cluster substations more precisely. The key challenge in clustering the substations is identifying the most appropriate feature set and level of dimensionality to facilitate distinct and representative clusters. To address this challenge, we apply three clustering methodologies: i) considering a distinct set of load pattern-based features for clustering, ii) using principle component analysis to reduce the dimensionality of the dataset before clustering, and ii) clustering solely on peak demand. We use these methods to analyse the load characteristics of 83 substations in Oxfordshire in different seasons and different types of day (working vs weekend). Finally, we discuss future trends and key applications of clustering consumption patterns to help industry practitioners and academic researchers optimise the deployment and effectiveness of smart meters.  </p>
+                                                <button type ="button"  onclick = "closeLEO()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_LEO = document.getElementById("popup_LEO");
+                                                
+                                                function openLEO(){
+                                                    popup_LEO.classList.add("open-popup");
+                                                }
+                                                function closeLEO(){
+                                                    popup_LEO.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+                                        <article>
+											<a onclick = "openSurvey()" class="image"><img src="images/final_path_diagram.png" alt="" /></a>
+											<h3> Electric vehicle adoption intention among paratransit owners and drivers in South Africa </h3>
+
+											<p> Survey of survey responses from 4,452 paratransit owners and drivers in South Africa using Structural Equation Modeling to understand their perceptions of electric vehicles and likelihood of purchasing them when they become available. See <a href="https://ssrn.com/abstract=4507426" target="_blank">"Electric vehicle adoption intention among paratransit owners and drivers in South Africa"</a> for more detail</p>
+
+                                            
+                                            <button type ="button" class ="button" onclick = "openSurvey()">Details</button>
+                                            <div class ="popup" id = "popup_ss">
+                                                <p><li>Tech stack: Python </li>
+                                                    <li><strong>Project Link: </strong><a href = "https://github.com/ChullEPG/taxi-survey" target ="_blank">GitHub URL</a></li></p>
+                                                <p> This project uses the sempy package in Python to construct a structural equation model capturing the effects of 7 constructs on EV adoption intention among paratransit owners and drivers.  </p>
+                                                <button type ="button"  onclick = "closeSurvey()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_ss = document.getElementById("popup_ss");
+                                                
+                                                function openSurvey(){
+                                                    popup_ss.classList.add("open-popup");
+                                                }
+                                                function closeSurvey(){
+                                                    popup_ss.classList.remove("open-popup");
+                                                }
+                                            </script>
+											
+										</article>
+										
+
+                                        <article>
+											<a onclick = "openWB()" class="image"><img src="images/decarb_Scenarios_new.png" alt="" /></a>
+											<h3>Paratransit Decarbonization in South Africa</h3>
+                                            <h3> to do: post code to github and link the proejct</h3>
+											<p> World Bank funded project to assess the environmental implications (as measured by GhG emissions) of electrifying a paratransit fleet in Johannesburg </p>
+                                            
+                                            <button type ="button" class ="button" onclick = "openWB()">Details</button>
+                                            <div class ="popup" id = "popup_WB">
+                                                <p><li>Tech stack: Python </li>
+                                                    <li><strong>Project Link: </strong><a href = "#" target ="_blank">GitHub URL</a></li></p>
+                                                <p> This tool does etc. etc. etc.</p>
+                                                <button type ="button"  onclick = "closeWB()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_WB = document.getElementById("popup_WB");
+                                                
+                                                function openWB(){
+                                                    popup_WB.classList.add("open-popup");
+                                                }
+                                                function closeWB(){
+                                                    popup_WB.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+
+                                        <article>
+											<a onclick = "openPalau()" class="image"><img src="images/drone_shot_ngermid_bay.png" alt="" /></a>
+											<h3>The Beast Cave: Assessing the flux of seawater and rainwater inside the Rock Islands</h3>
+                                         
+											<p> In this project, we used drone footage and marine biogeochemical data to answer the research questions: 
+                                                <ol>
+                                                    <li>How does the flow of water in and out of the Rock Islands affect the temperature and salinity around Ngermid Bay?  </li>
+                                                    <li>To what extent can infrared imagery be used to map groundwater mixing sites around the Rock Islands?</li>
+                                                </ol>
+                                            </p>
+                                            
+                                            <button type ="button" class ="button" onclick = "openPalau()">Details</button>
+                                            <div class ="popup" id = "popup_palau">
+                                                <p><li>Tech stack: Python, R, Metashape </li>
+                                                <p> Coral reefs around the world are bleaching at an alarming rate due to global warming. However, the corals of Palau are more thermally resistant than most, and are able to survive at higher temperatures. This is a subject of intense research at Palau International Coral Reef Center (PICRC) and for marine scientists globally. The intention of this project was to contribute to local research efforts by gaining a better understanding of how water flow in and out of the Rock Islands of Palau would affect temperature and salinity in Ngermid Bay. To do so, we deployed two instrument stations at two sites to compare the properties of the water coming out of the hole with the water in the bay within which the hole resides. On top of the two instrument stations we deployed, we used an infrared camera mounted on a DJI drone to image the SST of the area around the hole in Ngerkull gap. This allowed us to make qualitative assessments of the influence of the hole on the temperature of the waters around the basin. Finally, we used photogrammetry to create a 3D model of the hole that allowed us to derive its dimensions so that we could derive fluxes of water into and out of the hole given the velocity of water flowing across the boundary we measured. The project was sponsored by Stanford Bing Overseas Studies Program (BOSP) and done in collaboration with PICRC.) </p>
+                                                <button type ="button"  onclick = "closePalau()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_palau = document.getElementById("popup_palau");
+                                                
+                                                function openPalau(){
+                                                    popup_palau.classList.add("open-popup");
+                                                }
+                                                function closePalau(){
+                                                    popup_palau.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+
+									</div>
+								</section>
+
+                                
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+                <div id="sidebar">
+                    <div class="inner">
+
+                        <!-- Search -->
+                            <section id="search" class="alt">
+                                <form method="post" action="#">
+                                    <input type="text" name="query" id="query" placeholder="Search" />
+                                </form>
+                            </section>
+
+                        <!-- Menu -->
+                            <nav id="menu">
+                                <header class="major">
+                                    <h2>Menu</h2>
+                                </header>
+                                <ul>
+                                    <li><a href="index.html">Homepage</a></li>
+                                    <li><a href="publications.html">Publications</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li>
+                                        <span class="opener">Submenu</span>
+                                        <ul>
+                                            <li><a href="#">not</a></li>
+                                            <li><a href="#">sure</a></li>
+                                            <li><a href="#">what to</a></li>
+                                            <li><a href="#">put here</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="cv.html">CV</a></li>
+                                    <li><a href="consultant.html">Consulting</a></li>
+                                    <!-- <li> -->
+                                        <!-- <span class="opener">Another Submenu</span>
+                                        <ul>
+                                            <li><a href="#">Lorem Dolor</a></li>
+                                            <li><a href="#">Ipsum Adipiscing</a></li>
+                                            <li><a href="#">Tempus Magna</a></li>
+                                            <li><a href="#">Feugiat Veroeros</a></li> -->
+                                        <!-- </ul> -->
+                                    <!-- </li> -->
+                                    <li><a href="teaching.html">Teaching</a></li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href= "contact_form.html">Contact</a></li>
+                                </ul>
+                            </nav>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                     <!-- <h2> asasdfasdfdsafasdf  </h2> -->
+                                </header>
+                                <div class="mini-posts">
+                                    <article>
+                                        <a href="https://epg.eng.ox.ac.uk" class="image"><img src="images/EPG Logo.png" alt="" target = "_blank" /></a>
+                                        <p>Energy and Power Group (EPG)</p>
+                                    </article>
+                                    <article>
+                                        <a href="https://eng.ox.ac.uk" class="image"><img src="images/engsci_logo.jpeg" alt="" target="_blank" /></a>
+                                        <p>University of Oxford Department of Engineering Science</p>
+                                    </article>
+                                    <article>
+                                        <a href="#" class="image"><img src="images/stanford_logo.png" alt="" target ="_blank"/></a>
+                                        <p>Stanford University</p>
+                                    </article>
+                                </div>
+                                <!-- <ul class="actions">
+                                    <li><a href="#" class="button">More</a></li>
+                                </ul> -->
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Other profiles</h2>
+                                </header>
+                                <ul class="contact">
+                                    <li class="icon brands fa-researchgate"><a href="https://www.researchgate.net/profile/Christopher-Hull-5/research">ResearchGate</a></li>
+                                    <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/chris-hull-a8735316b/">LinkedIn</a></li>
+                                    <!-- <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> -->
+                                    <!-- Nashville, TN 00000-0000</li> -->
+                                </ul>
+                            </section>
+
+                        <!-- Section -->
+                            <section>
+                                <header class="major">
+                                    <h2>Contact details</h2>
+                                </header>
+                                <ul class="contact">
+                                    <li class="icon solid fa-envelope"><a href="#">christopher.hull@eng.ox.ac.uk</a></li>
+                                    <li class="icon solid fa-phone">+44 7516 544072</li>
+                                    <!-- <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> -->
+                                    <!-- Nashville, TN 00000-0000</li> -->
+                                </ul>
+                            </section>
+
+                        <!-- Footer -->
+                            <!-- <footer id="footer">
+                                <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+                            </footer> -->
+
+                    </div>
+                </div>
+
+        </div>
+
+
+            
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
