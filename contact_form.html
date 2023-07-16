@@ -47,21 +47,39 @@
 										<div class="row gtr-200">
 											<div class="col-6 col-12-medium">
                                                     
-												
-                                                    
+                                            <div class="container">
+                                                <h1>FormSubmit Demo</h1>
+                                                <form target="_blank" action="https://formsubmit.co/christopher.hull@eng.ox.ac.uk" method="POST">
+                                                    <div class="form-group">
+                                                    <div class="form-row">
+                                                        <div class="col">
+                                                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                                                        </div>
+                                                        <div class="col">
+                                                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                                                        </div>
+                                                    </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                    <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                                                </form>
+                                                </div>
+                                                
                                     
 
                                             </form>
 												<!-- Form -->
 													<!-- <h1>Contact Form</h1> -->
                                                     
-													<form action ="https://formsubmit.co/christopher.hull@eng.ox.ac.uk" method = "POST">
+													<form target ="_blank" action ="https://formsubmit.co/christopher.hull@eng.ox.ac.uk" method = "POST">
 														<div class="row gtr-uniform">
 															<div class="col-6 col-12-xsmall">
-																<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+																<input type="text" name="name" class = "form-control" id="name" value="" placeholder="Name" />
 															</div>
 															<div class="col-6 col-12-xsmall">
-																<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+																<input type="email" name="email" class = "form-control" id="email" value="" placeholder="Email" />
 															</div>
 															
 															<!-- Break -->
@@ -75,7 +93,7 @@
 															</div> -->
 															<!-- Break -->
 															<div class="col-12">
-																<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+																<textarea name="message" id="message" placeholder="Enter your message" class = "form-control" rows="8"></textarea>
 															</div>
 															<!-- Break -->
 															<div class="col-12">
