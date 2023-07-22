@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+  
 	</head>
 	<body class="is-preload">
 
@@ -57,122 +58,27 @@
 						</div>
 					</div>
 
-				<!-- Sidebar -->
-                <div id="sidebar">
-                    <div class="inner">
+                    <script>
+                        // Function to load the sidebar
+                        function loadSidebar() {
+                        const xhttp = new XMLHttpRequest();
+                        xhttp.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                            document.getElementById("sidebar-placeholder").innerHTML = this.responseText;
+                            }
+                        };
+                        xhttp.open("GET", "sidebar.html", true);
+                        xhttp.send();
+                        }
+                    </script>
+                <!-- Sidebar -->
+                <!-- In the body section of your HTML pages -->
+                    <div id="sidebar-placeholder"></div>
+                    <!-- The rest of your page content -->
+                    <script>
+                        loadSidebar();
+                    </script>
 
-                        <!-- Search -->
-                            <section id="search" class="alt">
-                                <form method="post" action="#">
-                                    <input type="text" name="query" id="query" placeholder="Search" />
-                                </form>
-                            </section>
-                     <!-- <form role="search-role" id="form">
-                            <input
-                                type="search"
-                                id="query-details"
-                                name="h"
-                                placeholder="Search anything ..."
-                                aria-label="Search through the content of the site"
-                            />
-                            <button>Search</button>
-                            </form>
-                            -->
-                              
-
-                        <!-- Menu -->
-                            <nav id="menu">
-                                <header class="major">
-                                    <h2>Menu</h2>
-                                </header>
-                                <ul>
-                                    <li><a href="index.html">Homepage</a></li>
-                                    <li><a href="publications.html">Publications</a></li>
-                                    <li><a href="projects.html">Projects</a></li>
-                                    <li>
-                                        <span class="opener">Submenu</span>
-                                        <ul>
-                                            <li><a href="#">not</a></li>
-                                            <li><a href="#">sure</a></li>
-                                            <li><a href="#">what to</a></li>
-                                            <li><a href="#">put here</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="cv.html">CV</a></li>
-                                    <li><a href="consultant.html">Consulting</a></li>
-                                    <!-- <li> -->
-                                        <!-- <span class="opener">Another Submenu</span>
-                                        <ul>
-                                            <li><a href="#">Lorem Dolor</a></li>
-                                            <li><a href="#">Ipsum Adipiscing</a></li>
-                                            <li><a href="#">Tempus Magna</a></li>
-                                            <li><a href="#">Feugiat Veroeros</a></li> -->
-                                        <!-- </ul> -->
-                                    <!-- </li> -->
-                                    <li><a href="teaching.html">Teaching</a></li>
-                                    <li><a href ="credit_list.html">Credit List</a>
-                                    <li><a href="#">Gallery/Sports</a></li>
-                                    <li><a href= "contact_form.html">Contact</a></li>
-                                </ul>
-                            </nav>
-
-                        <!-- Section -->
-                            <section>
-                                <header class="major">
-                                     <!-- <h2> asasdfasdfdsafasdf  </h2> -->
-                                </header>
-                                <div class="mini-posts">
-                                    <article>
-                                        <a href="https://epg.eng.ox.ac.uk" class="image"><img src="images/EPG Logo.png" alt="" target = "_blank" /></a>
-                                        <p>Energy and Power Group (EPG)</p>
-                                    </article>
-                                    <article>
-                                        <a href="https://eng.ox.ac.uk" class="image"><img src="images/engsci_logo.jpeg" alt="" target="_blank" /></a>
-                                        <p>University of Oxford Department of Engineering Science</p>
-                                    </article>
-                                    <article>
-                                        <a href="#" class="image"><img src="images/stanford_logo.png" alt="" target ="_blank"/></a>
-                                        <p>Stanford University</p>
-                                    </article>
-                                </div>
-                                <!-- <ul class="actions">
-                                    <li><a href="#" class="button">More</a></li>
-                                </ul> -->
-                            </section>
-
-                        <!-- Section -->
-                            <section>
-                                <header class="major">
-                                    <h2>Other profiles</h2>
-                                </header>
-                                <ul class="contact">
-                                    <li class="icon brands fa-researchgate"><a href="https://www.researchgate.net/profile/Christopher-Hull-5/research" target = "_blank">ResearchGate</a></li>
-                                    <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/chris-hull-a8735316b/" target = "_blank">LinkedIn</a></li>
-                                    <!-- <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> -->
-                                    <!-- Nashville, TN 00000-0000</li> -->
-                                </ul>
-                            </section>
-
-                        <!-- Section -->
-                            <section>
-                                <header class="major">
-                                    <h2>Contact details</h2>
-                                </header>
-                                <ul class="contact">
-                                    <li class="icon solid fa-envelope"><a href="mailto:christopher.hull@eng.ox.ac.uk" target = "_blank">christopher.hull@eng.ox.ac.uk</a></li>
-                                    <li class="icon solid fa-phone">+44 7516 544072</li>
-                                    <!-- <li class="icon solid fa-home">1234 Somewhere Road #8254<br /> -->
-                                    <!-- Nashville, TN 00000-0000</li> -->
-                                </ul>
-                            </section>
-
-                        <!-- Footer -->
-                            <!-- <footer id="footer">
-                                <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-                            </footer> -->
-
-                    </div>
-                </div>
 
         </div>
 
