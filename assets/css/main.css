@@ -1916,7 +1916,7 @@ button,
 }
 .popup{
     width: 800px;
-    background: rgba(95, 125, 224, 1); /* Set the background color with full opacity */
+    background: rgb(16, 42, 112); /* Set the background color with full opacity */
     border-radius: 5px;
     position: absolute;
     top: 50%;
@@ -1926,6 +1926,7 @@ button,
     color: #fff;
     visibility: hidden;
     transition: transform 0.4s, top 0.4s;
+    z-index: 9999;
 }
 
 .popup button{
