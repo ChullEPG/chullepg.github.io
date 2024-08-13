@@ -118,33 +118,31 @@
 										</article>
 
                                         <article>
-
-                                            <a onclick="openFP()" class="image">
-                                                <video src="images/projects/bora_bora.MP4" alt="" controls></video>
+                                            <a onclick="openFP()" class="video">
+                                                <video src="images/projects/bora_bora.MP4" controls></video>
                                             </a>
                                             <h3>Aerial mapping of coral reefs in French Polynesia with consumer-grade drones</h3>
-                                            <p>Collected aerial imagery of coral reefs using DJI Mavic 3 Pro on Bora Bora and Moorea to help with reef restoration studies at the CRIOBE lab in Moorea. The research was conducted as part of the <a href="https://darwin200.com" target="_blank">Darwin200 expedition</a>. Sponsored by the  <a href="https://www.explorers.org" target="_blank">Explorer's Club</a> and <a href="https://www.theiet.org" target="_blank">Institute for Engineering and Technology</a>.</p>
-                            
-
+                                            <p>Collected aerial imagery of coral reefs using DJI Mavic 3 Pro on Bora Bora and Moorea to help with reef restoration studies at the CRIOBE lab in Moorea. The research was conducted as part of the <a href="https://darwin200.com" target="_blank">Darwin200 expedition</a>. Sponsored by the <a href="https://www.explorers.org" target="_blank">Explorer's Club</a> and <a href="https://www.theiet.org" target="_blank">Institute for Engineering and Technology</a>.</p>
                                         
-                                        <button type ="button" class ="button" onclick = "openFP()">Details</button>
-                                        <div class ="popup" id = "popup_FP">
-                                            <p></p>
-                                            <p> Contact Chris for further information on the project. </p>
-                                            <button type ="button"  onclick = "closeFP()">Close</button>
-                                        </div>
-
-                                        <script>
-                                            let popup_FP = document.getElementById("popup_FP");
-                                            git 
-                                            function openFP(){
-                                                popup_FP.classList.add("open-popup");
-                                            }
-                                            function closeFP(){
-                                                popup_FP.classList.remove("open-popup");
-                                            }
-                                        </script>
-                                    </article>
+                                            <button type="button" class="button" onclick="openFP()">Details</button>
+                                            <div class="popup" id="popup_FP">
+                                                <p>Contact Chris for further information on the project.</p>
+                                                <button type="button" onclick="closeFP()">Close</button>
+                                            </div>
+                                        
+                                            <script>
+                                                let popup_FP = document.getElementById("popup_FP");
+                                        
+                                                function openFP() {
+                                                    popup_FP.classList.add("open-popup");
+                                                }
+                                        
+                                                function closeFP() {
+                                                    popup_FP.classList.remove("open-popup");
+                                                }
+                                            </script>
+                                        </article>                                        
+                                        
 										
 										<article>
 											<a onclick = "openSS()" class="image"><img src="images/projects/optimal_solar_storage.png" alt="" /></a>
