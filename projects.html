@@ -116,6 +116,35 @@
                                                 }
                                             </script>
 										</article>
+
+                                        <article>
+
+                                            <a onclick="openBumpy()" class="image">
+                                                <video src="images/bora_bora.MP4" alt="" controls></video>
+                                            </a>
+                                            <h3>Aerial mapping of coral reefs in French Polynesia with consumer-grade drones</h3>
+                                            <p>Collected aerial imagery of coral reefs using DJI Mavic 3 Pro on Bora Bora and Moorea to help with reef restoration studies at the CRIOBE lab in Moorea. The research was conducted as part of the <a href="https://darwin200.com" target="_blank">Darwin200 expedition</a>. Sponsored by the  <a href="https://www.explorers.org" target="_blank">Explorer's Club</a> and <a href="https://www.theiet.org" target="_blank">Institute for Engineering and Technology</a>.</p>
+                            
+                                        
+                                        
+                                        <button type ="button" class ="button" onclick = "openBumpy()">Details</button>
+                                        <div class ="popup" id = "popup_bumpy">
+                                            <p></p>
+                                            <p> Contact Chris for further information on the project. </p>
+                                            <button type ="button"  onclick = "closeBumpy()">Close</button>
+                                        </div>
+
+                                        <script>
+                                            let popup_bumpy = document.getElementById("popup_bumpy");
+                                            
+                                            function openBumpy(){
+                                                popup_bumpy.classList.add("open-popup");
+                                            }
+                                            function closeBumpy(){
+                                                popup_bumpy.classList.remove("open-popup");
+                                            }
+                                        </script>
+                                    </article>
 										
 										<article>
 											<a onclick = "openSS()" class="image"><img src="images/projects/optimal_solar_storage.png" alt="" /></a>
@@ -137,35 +166,6 @@
                                                 }
                                                 function closeSS(){
                                                     popup_survey.classList.remove("open-popup");
-                                                }
-                                            </script>
-										</article>
-
-                                        <article>
-
-                                                <a onclick="openBumpy()" class="image">
-                                                    <video src="images/bora_bora.MP4" alt="" controls></video>
-                                                </a>
-                                                <h3>Aerial mapping of coral reefs in French Polynesia with consumer-grade drones</h3>
-                                                <p>Collected aerial imagery of coral reefs using DJI Mavic 3 Pro on Bora Bora and Moorea to help with reef restoration studies at the CRIOBE lab in Moorea. The research was conducted as part of the <a href="https://darwin200.com" target="_blank">Darwin200 expedition</a>. Sponsored by the  <a href="https://www.explorers.org" target="_blank">Explorer's Club</a> and <a href="https://www.theiet.org" target="_blank">Institute for Engineering and Technology</a>.</p>
-                                
-                                            
-                                            
-                                            <button type ="button" class ="button" onclick = "openBumpy()">Details</button>
-                                            <div class ="popup" id = "popup_bumpy">
-                                                <p></p>
-                                                <p> Contact Chris for further information on the project. </p>
-                                                <button type ="button"  onclick = "closeBumpy()">Close</button>
-                                            </div>
-
-                                            <script>
-                                                let popup_bumpy = document.getElementById("popup_bumpy");
-                                                
-                                                function openBumpy(){
-                                                    popup_bumpy.classList.add("open-popup");
-                                                }
-                                                function closeBumpy(){
-                                                    popup_bumpy.classList.remove("open-popup");
                                                 }
                                             </script>
 										</article>
