@@ -41,6 +41,30 @@
 										<h2>Projects</h2>
 									</header>
 									<div class="posts">
+                                        <article>
+											<a onclick = "openBumpy()" class="image"><img src="images/projects/charging_station_design.jpg" alt="" /></a>
+											<h3>Techno-economic optimization and assessment of solar-battery charging station under grid constraints with varying levels of fleet EV penetration</h3>
+											<p>First techno-economic assessment of solar-battery charging station for paratransit. See the full paper here: <a href="https://www.sciencedirect.com/science/article/pii/S0306261924013734" target="_blank">"Techno-economic optimization and assessment of solar-battery charging station under grid constraints with varying levels of fleet EV penetration"</a></p>
+                                            
+                                            <button type ="button" class ="button" onclick = "openBumpy()">Details</button>
+                                            <div class ="popup" id = "popup_bumpy">
+                                                <p> <li><strong style="color:white">Project Link: </strong><a href = "https://github.com/ChullEPG/PV-ES-CS-Sizer" target ="_blank" style="color: rgba(193, 198, 238, 0.735);">GitHub URL</a></li></p>
+                                                <p>The integration of electric vehicles (EVs) into power systems worldwide will be challenged in many locations by grid constraints, such as load shedding in developing countries or active network management in developed countries. I develop a novel methodology that incorporates grid constraints into a PV-ES capacity optimization model, and investigate the impacts of optimistic and conservative grid constraint scenarios and different degrees of fleet EV penetration on PV-ES-CS system performance through a case study of a paratransit fleet in Dobsonville, South Africa. To determine the most cost-effective design of the systems, the PV and ES components are optimized to maximize net present value (NPV).</p>
+                                                <button type ="button"  onclick = "closeBumpy()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_bumpy = document.getElementById("popup_bumpy");
+                                                
+                                                function openBumpy(){
+                                                    popup_bumpy.classList.add("open-popup");
+                                                }
+                                                function closeBumpy(){
+                                                    popup_bumpy.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+                                        
 										<article>
 											<a onclick = "openBumpy()" class="image"><img src="images/projects/mobility_fourier_sum.png" alt="" /></a>
 											<h3>A Bumpy Ride to Electrification: Paratransit Vehicle Energy Requirements:</h3>
