@@ -41,29 +41,6 @@
 										<h2>Projects</h2>
 									</header>
 									<div class="posts">
-                                        <article>
-											<a onclick = "openBumpy()" class="image"><img src="images/projects/charging_station_design.jpg" alt="" /></a>
-											<h3>Techno-economic optimization and assessment of solar-battery charging station under grid constraints with varying levels of fleet EV penetration</h3>
-											<p>First techno-economic assessment of solar-battery charging station for paratransit. See the full paper here: <a href="https://www.sciencedirect.com/science/article/pii/S0306261924013734" target="_blank">"Techno-economic optimization and assessment of solar-battery charging station under grid constraints with varying levels of fleet EV penetration"</a></p>
-                                            
-                                            <button type ="button" class ="button" onclick = "openBumpy()">Details</button>
-                                            <div class ="popup" id = "popup_bumpy">
-                                                <p> <li><strong style="color:white">Project Link: </strong><a href = "https://github.com/ChullEPG/PV-ES-CS-Sizer" target ="_blank" style="color: rgba(193, 198, 238, 0.735);">GitHub URL</a></li></p>
-                                                <p>The integration of electric vehicles (EVs) into power systems worldwide will be challenged in many locations by grid constraints, such as load shedding in developing countries or active network management in developed countries. I develop a novel methodology that incorporates grid constraints into a PV-ES capacity optimization model, and investigate the impacts of optimistic and conservative grid constraint scenarios and different degrees of fleet EV penetration on PV-ES-CS system performance through a case study of a paratransit fleet in Dobsonville, South Africa. To determine the most cost-effective design of the systems, the PV and ES components are optimized to maximize net present value (NPV).</p>
-                                                <button type ="button"  onclick = "closeBumpy()">Close</button>
-                                            </div>
-
-                                            <script>
-                                                let popup_bumpy = document.getElementById("popup_bumpy");
-                                                
-                                                function openBumpy(){
-                                                    popup_bumpy.classList.add("open-popup");
-                                                }
-                                                function closeBumpy(){
-                                                    popup_bumpy.classList.remove("open-popup");
-                                                }
-                                            </script>
-										</article>
                                         
 										<article>
 											<a onclick = "openBumpy()" class="image"><img src="images/projects/mobility_fourier_sum.png" alt="" /></a>
@@ -142,15 +119,14 @@
 										
 										<article>
 											<a onclick = "openSS()" class="image"><img src="images/projects/optimal_solar_storage.png" alt="" /></a>
-											<h3> Optimally sizing solar PV and battery storage for EV charging stations </h3>
-
-											<p> Optimally sizing solar PV and battery storage for EV charging stations </p>
+                                            <h3>Techno-economic optimization and assessment of solar-battery charging station under grid constraints with varying levels of fleet EV penetration</h3>
+											<p>First techno-economic assessment of solar-battery charging station for paratransit. See the full paper here: <a href="https://www.sciencedirect.com/science/article/pii/S0306261924013734" target="_blank">"Techno-economic optimization and assessment of solar-battery charging station under grid constraints with varying levels of fleet EV penetration"</a></p>
                                             
-                                            <button type ="button" class ="button" onclick = "openSS()">Details</button>
-                                            <div class ="popup" id = "popup_survey">
-                                                <p><li><strong style="color:white">Project Link: </strong><a href = "https://github.com/ChullEPG/PV-ES-CS-Sizer" target ="_blank" style="color: rgba(193, 198, 238, 0.735);">GitHub URL</a></li></p>
-                                                <p> Co-located solar photovoltaic (PV) and energy storage (ES) systems at electric vehicle (EV) charging stations can defray the often expensive capital investments needed to transition to electric fleets. This project involves finding the optimal rating of solar PV and battery energy storage in kW and kWh respectively that maximize the net present value of the PV-ES investment. In contrast to pre-existing models, this model quantifies the value of resiliency provided by the PV-ES system during load shedding events, which are common in certain regions of the world such as South Africa. See related paper "Optimization and technoeconomic assessment of solar and storage consider load shedding and variable fleet electrification" for further details. </p>
-                                                <button type ="button"  onclick = "closeSS()">Close</button>
+                                            <button type ="button" class ="button" onclick = "openBumpy()">Details</button>
+                                            <div class ="popup" id = "popup_bumpy">
+                                                <p> <li><strong style="color:white">Project Link: </strong><a href = "https://github.com/ChullEPG/PV-ES-CS-Sizer" target ="_blank" style="color: rgba(193, 198, 238, 0.735);">GitHub URL</a></li></p>
+                                                <p>The integration of electric vehicles (EVs) into power systems worldwide will be challenged in many locations by grid constraints, such as load shedding in developing countries or active network management in developed countries. I develop a novel methodology that incorporates grid constraints into a PV-ES capacity optimization model, and investigate the impacts of optimistic and conservative grid constraint scenarios and different degrees of fleet EV penetration on PV-ES-CS system performance through a case study of a paratransit fleet in Dobsonville, South Africa. To determine the most cost-effective design of the systems, the PV and ES components are optimized to maximize net present value (NPV).</p>
+                                                <button type ="button"  onclick = "closeBumpy()">Close</button>
                                             </div>
 
                                             <script>
@@ -164,6 +140,36 @@
                                                 }
                                             </script>
 										</article>
+
+                                        <article>
+
+                                                <a onclick="openBumpy()" class="image">
+                                                    <video src="images/bora_bora.MP4" alt="" controls></video>
+                                                </a>
+                                                <h3>Aerial mapping of coral reefs in French Polynesia with consumer-grade drones</h3>
+                                                <p>Collected aerial imagery of coral reefs using DJI Mavic 3 Pro on Bora Bora and Moorea to help with reef restoration studies at the CRIOBE lab in Moorea. The research was conducted as part of the <a href="https://darwin200.com" target="_blank">Darwin200 expedition</a>. Sponsored by the  <a href="https://www.explorers.org" target="_blank">Explorer's Club</a> and <a href="https://www.theiet.org" target="_blank">Institute for Engineering and Technology</a>.</p>
+                                
+                                            
+                                            
+                                            <button type ="button" class ="button" onclick = "openBumpy()">Details</button>
+                                            <div class ="popup" id = "popup_bumpy">
+                                                <p></p>
+                                                <p> Contact Chris for further information on the project. </p>
+                                                <button type ="button"  onclick = "closeBumpy()">Close</button>
+                                            </div>
+
+                                            <script>
+                                                let popup_bumpy = document.getElementById("popup_bumpy");
+                                                
+                                                function openBumpy(){
+                                                    popup_bumpy.classList.add("open-popup");
+                                                }
+                                                function closeBumpy(){
+                                                    popup_bumpy.classList.remove("open-popup");
+                                                }
+                                            </script>
+										</article>
+
 										<article>
 											<a  onclick = "openLEO()" class="image"><img src="images/projects/substations_in_oxfordshire.png" alt="" /></a>
 											<h3> Clustering based analysis for Oxford's Substation load data</h3>
@@ -188,6 +194,7 @@
                                                 }
                                             </script>
 										</article>
+                                    
                                         <article>
 											<a onclick = "openSurvey()" class="image"><img src="images/projects/final_path_diagram.png" alt="" /></a>
 											<h3> Electric vehicle adoption intention among paratransit owners and drivers in South Africa </h3>
