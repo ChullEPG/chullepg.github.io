@@ -8,7 +8,6 @@ category: work
 related_publications: true
 ---
 
-
 Calculating the vehicle energy consumption (kWh/km) for paratransit vehicles. See the full paper: [High fidelity estimates of paratransit energy consumption from per-second GPS tracking data](https://www.sciencedirect.com/science/article/pii/S1361920923000925).
 
 The project utilizes Python for vehicle force modeling, exploring accuracy gains using Fast Fourier Transformations. 
