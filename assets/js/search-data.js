@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "this page is very much a work in progress.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -442,51 +442,51 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-the-beast-cave",
+          title: 'The Beast Cave',
+          description: "Studying water flow in Palau&#39;s Rock Islands using drones and biogeochemical data.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
-          title: 'project 2',
-          description: "a project with a background image and giscus comments",
+              window.location.href = "/projects/beastcave/";
+            },},{id: "projects-a-bumpy-ride-to-electrification",
+          title: 'A Bumpy Ride to Electrification',
+          description: "Calculating energy consumption for paratransit vehicles using GPS data.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
-          description: "a project that redirects to another website",
+              window.location.href = "/projects/bumpy_ride/";
+            },},{id: "projects-aerial-mapping-of-coral-reefs",
+          title: 'Aerial Mapping of Coral Reefs',
+          description: "Using drones to map coral reefs for restoration studies.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+              window.location.href = "/projects/darwin200/";
+            },},{id: "projects-clustering-analysis-for-oxford-39-s-substations",
+          title: 'Clustering Analysis for Oxford&amp;#39;s Substations',
+          description: "Analyzing load characteristics for Oxfordshire substations.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+              window.location.href = "/projects/leo_substation_clust/";
+            },},{id: "projects-paratransit-decarbonization-in-south-africa",
+          title: 'Paratransit Decarbonization in South Africa',
+          description: "World Bank project assessing environmental implications of fleet electrification.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-project-6",
-          title: 'project 6',
-          description: "a project with no image",
+              window.location.href = "/projects/paratransit_decarb/";
+            },},{id: "projects-representative-driving-cycles-for-paratransit",
+          title: 'Representative Driving Cycles for Paratransit',
+          description: "A novel time-series clustering methodology for representative driving cycles.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-project-7",
-          title: 'project 7',
-          description: "with background image",
+              window.location.href = "/projects/rdc/";
+            },},{id: "projects-optimization-of-solar-battery-charging-stations",
+          title: 'Optimization of Solar-Battery Charging Stations',
+          description: "Optimizing PV-ES systems under grid constraints.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-project-8",
-          title: 'project 8',
-          description: "an other project with a background image and giscus comments",
+              window.location.href = "/projects/solar_storage_optimization/";
+            },},{id: "projects-ev-adoption-intention-in-south-africa",
+          title: 'EV Adoption Intention in South Africa',
+          description: "Surveying perceptions and adoption likelihood among paratransit owners.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
+              window.location.href = "/projects/taxi_survey/";
+            },},{id: "projects-technoeconomics-of-paratransit-fleet-electrification",
+          title: 'Technoeconomics of Paratransit Fleet Electrification',
+          description: "Open-source tool to assess fleet electrification value proposition.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/technoeconomics/";
             },},{
         id: 'social-email',
         title: 'email',
