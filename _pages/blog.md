@@ -14,9 +14,6 @@ pagination:
   trail:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
-newsletter:
-  enabled: true
-  endpoint: https://app.loops.so/api/newsletter-form/cm5iey9de01dr4empoyi1uw1k
 ---
 
 <div class="post">
