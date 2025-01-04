@@ -122,13 +122,13 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: youtube.com
-    rss_url: https://youtube.com/shorts/3cMURcUebcA
-  - name: Flexibility Routine
-    posts:
-      - url: https://youtube.com/shorts/3cMURcUebcA
-        published_date: 2025-03-01
+# external_sources:
+#   - name: youtube.com
+#     rss_url: https://youtube.com/shorts/3cMURcUebcA
+#   - name: Flexibility Routine
+#     posts:
+#       - url: https://youtube.com/shorts/3cMURcUebcA
+#         published_date: 2025-03-01
 
 # -----------------------------------------------------------------------------
 # Newsletter
@@ -347,7 +347,7 @@ enable_publication_thumbnails: true
 
 # These are the defaults
 external_links:
-  enabled: true
+  enabled: false
   rel: external nofollow noopener
   target: _blank
   exclude:
