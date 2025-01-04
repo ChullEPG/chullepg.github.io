@@ -267,7 +267,7 @@ jekyll-archives:
     tag: "/blog/tag/:name/"
     category: "/blog/category/:name/"
 
-display_tags: ["tagx", "tagy", "statistics", "math", "code", "deeplearning"] # these tags will be displayed on the front page of your blog
+display_tags: ["life", "piano", "math", "code", "deeplearning"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
