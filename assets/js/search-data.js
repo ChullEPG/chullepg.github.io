@@ -65,7 +65,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "news-a-simple-inline-announcement",
+            },{id: "post-first-post",
+      
+        title: "First post",
+      
+      description: "my first blog post",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/firstpost/";
+        
+      },
+    },{id: "post-a-post-without-math",
+      
+        title: "a post without math",
+      
+      description: "an example of a blog post with absolutely no math",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2015/notmath/";
+        
+      },
+    },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
