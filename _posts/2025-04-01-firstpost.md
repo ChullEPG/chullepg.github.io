@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First post
-date: 2025-01-04 11:12:00-0400
+date: 2025-01-04 11:12:00-0000
 description: my first blog post
 tags: life 
 categories: life-posts

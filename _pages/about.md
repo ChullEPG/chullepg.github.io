@@ -23,7 +23,7 @@ I love technology and am passionate about clean, low-cost, and abundant energy f
 
 Outside of work, I'm an active member of the [Explorer's Club](https://www.explorers.org), and have provided research mentorship services for high school and undergraduate students since 2017. 
 
-Check out my [blog](https://chris-hull.com/blog/), where I am documenting the process of learning multiple things at once. 
+Check out my [blog](https://chris-hull.com/blog/), where I am starting to learn in public. 
 
 <!-- 
 Chris Hull is an Energy Systems engineer affiliated with the [Energy and Power Group (EPG)](https://epg.eng.ox.ac.uk) at the University of Oxford, where he researches the electrification of public transportation systems in Sub-Saharan Africa under Professor Malcolm McCulloch. He previously studied environmental economics at Stanford University, and is focused on developing solutions for achieving net-zero in an economically feasible way. Chris is driven by his passion for cutting-edge technological and market solutions that enable clean, low-cost, and abundant energy for all. 
