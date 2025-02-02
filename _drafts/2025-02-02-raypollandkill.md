@@ -12,7 +12,8 @@ Ray poll and kill allows a user to detect and terminate unresponsive tasks proce
 
 
 Example script (Motivation and explanation below): 
-```
+````markdown
+```python
 import ray
 import time 
 import multiprocessing
@@ -33,9 +34,7 @@ ray.init(num_cpus = num_cpus, ignore_reinit_error = True)
 not_done = []
 
 
-while 
-
-
+while __ or len(not_done) > 0: 
     done, not_done = ray.wait(task_refs, num_returns = 1, timeout = 1.0)
 
     for task_ref in done:
@@ -57,6 +56,7 @@ while
 # But to be sure... 
 ray.shutdown()
 ```
+````
 
 Motivation: 
 
