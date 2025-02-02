@@ -15,11 +15,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hello! I'm a research engineer based in the United Kingdom. I currently work at [Monumo](https://monumo.com), where I research and implement novel machine learning and generative AI methods to optimize and design electric motors.  
+Hello! I'm an ML research engineer based in the United Kingdom. I currently work at [Monumo](https://monumo.com), where I research and implement novel machine learning and generative AI methods to optimize and design electric motors. 
 
-I just recently finished my PhD in the [Energy and Power Group (EPG)](https://epg.eng.ox.ac.uk) at the University of Oxford under Prof. Malcolm McCulloch (fantastic supervisor!). I wrote my thesis on the electrification of public transportation systems in Sub-Saharan Africa. You can see some of my work in the [publications](https://chris-hull.com/publications/) section. Before that, I did a bachelor's in Economics and a master's in Management Science & Engineering at Stanford University. 
-
-I love technology and am passionate about clean, low-cost, and abundant energy for all. I'm excited by the possibility of new technologies to drive emerging value chains. 
+I love technology and am passionate about clean, low-cost, and abundant energy for all. Within this sphere, my career is oriented around scientific machine learning and new technologies driving emerging value chains. 
 
 Outside of work, I'm an active member of the [Explorer's Club](https://www.explorers.org), and have provided research mentorship services for high school and undergraduate students since 2017. 
 
