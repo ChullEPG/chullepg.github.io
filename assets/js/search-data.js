@@ -65,9 +65,9 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-first-post",
+            },{id: "post-test",
       
-        title: "First post",
+        title: "Test",
       
       description: "my first blog post",
       section: "Posts",
@@ -76,11 +76,11 @@ ninja.data = [{
           window.location.href = "/blog/2025/firstpost/";
         
       },
-    },{id: "post-a-post-without-math",
+    },{id: "post-",
       
-        title: "a post without math",
+        title: "---",
       
-      description: "an example of a blog post with absolutely no math",
+      description: "----",
       section: "Posts",
       handler: () => {
         
