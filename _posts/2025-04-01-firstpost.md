@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First post
+title: Test
 date: 2025-01-04 11:12:00-0000
 description: my first blog post
 tags: life 
@@ -8,10 +8,7 @@ categories: life-posts
 related_posts: false
 ---
 
-I have been sitting at the computer for way too long today, setting up this website among other things. 
-
-Glad I got it all out of the way in one chunk, but my butt and eyes are not happy with me. Hopefully they'll forgive me after some TLC and not decide to quit on me :O. 
-
+Hello there.
 <!-- 
 This theme supports rendering beautiful math in inline and display modes using [MathJax 3](https://www.mathjax.org/) engine. You just need to surround your math expression with `$$`, like `$$ E = mc^2 $$`. If you leave it inside a paragraph, it will produce an inline expression, just like $$ E = mc^2 $$.
 <!-- 
