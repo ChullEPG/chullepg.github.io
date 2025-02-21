@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pushforward to cone
+title: Vect
 date: 2025-05-01 11:12:00-0000
 description: How to push tangent vectors from a 2d open sector to a cone
 tags: learning
@@ -39,48 +39,36 @@ import numpy as np
 
 # vector
 # extract x,y coords
-xy = #TODO:  Insert random vecto r
+vxy = # TODO: Insert random vector
+xy = #TODO:  Insert random coords
 x = xy[:, 0]
 y = xy[:, 1]
 r = np.sqrt(x**2 +y**2) # or np.linalg.norm(xy)
 theta = np.arctan2(y, x) # arctan(y,x)
 ```
+To map a vector (u, v) to its polar form (r, theta), we need to express it in terms of its radial and tangential components.
+$$
+v_r = v_x(cos(\theta))+ v_y(sin(\theta))
+v_{\theta} = -v_x(sin(\theta)) + v_y(cos(\theta))
+$$
+v_r tells us how much of the vector is increasing in the direction ``r``, and ``v_{\theta}`` tells us how much of the vector is increasing in the direction perpendicular to ``r``, i.e. tangent to the circular motion. 
 
-The Jacobian matrix of \((r,\theta)\) with respect to \((u,v)\) is:
-
-\[
-\frac{\partial (r,\theta)}{\partial (u,v)}
-=
-\begin{pmatrix}
-\displaystyle \frac{\partial r}{\partial u} & \displaystyle \frac{\partial r}{\partial v}\\[6pt]
-\displaystyle \frac{\partial \theta}{\partial u} & \displaystyle \frac{\partial \theta}{\partial v}
-\end{pmatrix}
-=
-\begin{pmatrix}
-\displaystyle \frac{u}{\sqrt{u^2 + v^2}} & \displaystyle \frac{v}{\sqrt{u^2 + v^2}}\\[6pt]
-\displaystyle \frac{-v}{u^2 + v^2} & \displaystyle \frac{u}{u^2 + v^2}
-\end{pmatrix}.
-\]
-
-``` 
-df_dr = np.stack(
-    r * np.cos(theta),
-    r * np.sin(theta),
-    r**2
-)
-
-df_dtheta = np.stack(
-    -r * np.sin(theta),
-    r * np.cos(theta),
-    0
-)
 ```
+vx = uv[:, 0]
+vy = uv[:, 1]
+v_r  = vx * np.cos(theta) + vy * np.sin(theta)
+v_theta = -vx * np.sin(theta) + vy * np.cos(theta)
+```
+
+Now we've got the vector's original coordinates and components in polar space.
+
+
 
 ---
 
 ## Step 2: From \((r,\theta)\) to \((x,y,z)\)
 
-Next, we embed \((r,\theta)\) into 3D. As an example, consider a **paraboloid**:
+Next, we embed \((r,\theta)\) into 3D. As an example, consider a **paraboloid**, (looks much like a cone): 
 
 \[
 \begin{cases}
@@ -107,6 +95,23 @@ The Jacobian of \((x,y,z)\) with respect to \((r,\theta)\) is:
 2r & 0
 \end{pmatrix}.
 \]
+
+
+``` 
+df_dr = np.stack(
+    [r * np.cos(theta),
+    r * np.sin(theta),
+    r**2],
+    axis = 1
+)
+
+df_dtheta = np.stack(
+   [-r * np.sin(theta),
+    r * np.cos(theta),
+    0],
+    axis = 1
+)
+```
 
 ---
 
@@ -162,13 +167,6 @@ d\Phi_{(u,v)}
 ### Conclusion
 
 We have shown how to **map a velocity vector** from a 2D plane \((u,v)\) to 3D \((x,y,z)\) via polar coordinates. The core concept is chaining two Jacobians to form a **composite pushforward**. This is a fundamental idea in differential geometry and appears in many practical applications, from robotic kinematics to 3D modeling on curved surfaces.
-
----
-
-### References
-
-- *Differential Geometry of Curves and Surfaces* by Manfredo P. do Carmo.  
-- [al-folio](https://github.com/alshedivat/al-folio) for hosting academic pages with built-in MathJax support.
 
 
 
