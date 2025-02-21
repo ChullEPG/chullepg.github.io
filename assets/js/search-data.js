@@ -65,7 +65,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-",
+            },{id: "post-pushforward",
+      
+        title: "Pushforward",
+      
+      description: "Description of pushforward vectors.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2015/pf/";
+        
+      },
+    },{id: "post-",
       
         title: "---",
       
