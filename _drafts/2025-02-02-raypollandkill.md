@@ -56,7 +56,6 @@ while __ or len(not_done) > 0:
 # But to be sure... 
 ray.shutdown()
 ```
-````
 
 Motivation: 
 
@@ -81,18 +80,16 @@ The only catch is you need some idea of how long your task should take in the fi
 
 
 Imports
-```
+```python
 import ray 
 import time
-```
 
-```
 
 ray.cancel(force = True) #recursive = True by default
 ```
 
 Context: 
-The poll and kill strategy became useful for me when I distributed a task that runs Gmsh under the hood. Gmsh is written in C++ and crashed out in ~5% of tasks that I was running. Initially when running the script, I noticed that over time my script would slow down, eventually grinding to a halt when all of the workers had taken up one by one.
+The poll and kill strategy became useful for me when I distributed a task that runs [Gmsh](https://gmsh.info) under the hood. Gmsh is written in C++ and crashed out in ~5% of tasks that I was running. Initially when running the script, I noticed that over time my script would slow down, eventually grinding to a halt when all of the workers had taken up one by one.
 
 
 
