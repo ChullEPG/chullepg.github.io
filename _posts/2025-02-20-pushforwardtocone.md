@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Vect
+title: Vector Pushforward
 date: 2025-05-01 11:12:00-0000
 description: How to push tangent vectors from a 2d open sector to a cone
 tags: learning
-categories: programming
+categories: math 
 related_posts: false
 ---
 
@@ -47,10 +47,11 @@ r = np.sqrt(x**2 +y**2) # or np.linalg.norm(xy)
 theta = np.arctan2(y, x) # arctan(y,x)
 ```
 To map a vector (u, v) to its polar form (r, theta), we need to express it in terms of its radial and tangential components.
-$$
-v_r = v_x(cos(\theta))+ v_y(sin(\theta))
+\[
+v_r = v_x(cos(\theta))+ v_y(sin(\theta)) \\ 
 v_{\theta} = -v_x(sin(\theta)) + v_y(cos(\theta))
-$$
+\]
+
 v_r tells us how much of the vector is increasing in the direction ``r``, and ``v_{\theta}`` tells us how much of the vector is increasing in the direction perpendicular to ``r``, i.e. tangent to the circular motion. 
 
 ```
