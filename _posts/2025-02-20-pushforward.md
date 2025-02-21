@@ -3,8 +3,8 @@ layout: post
 title: Vector Pushforward
 date: 2025-05-01 11:12:00-0000
 description: How to push tangent vectors from a 2d open sector to a cone
-tags: learning
-categories: math 
+tags: math
+categories: sample-posts 
 related_posts: false
 ---
 
