@@ -10,7 +10,7 @@ related_posts: false
 
 ## Introduction
 
-In many applications, we start with a velocity vector defined in a local 2D Cartesian plane \((u,v)\) and need to map it into a 3D Cartesian system \((x,y,z)\). However, instead of going directly from \((u,v)\) to \((x,y,z)\), we may **first** switch to polar coordinates \((r,\theta)\) for convenience or geometric constraints, and **then** embed \((r,\theta)\) into 3D. Going via \((r, theta)\) is useful when the 3D space naturally maps into polar coordinates. For example, consider a **parabaloid** (looks much like a cone).
+<!-- In many applications, we start with a velocity vector defined in a local 2D Cartesian plane \((u,v)\) and need to map it into a 3D Cartesian system \((x,y,z)\). However, instead of going directly from \((u,v)\) to \((x,y,z)\), we may **first** switch to polar coordinates \((r,\theta)\) for convenience or geometric constraints, and **then** embed \((r,\theta)\) into 3D. Going via \((r, theta)\) is useful when the 3D space naturally maps into polar coordinates. For example, consider a **parabaloid** (looks much like a cone).
 
 A classic example is an object moving near an event horizon of a black hole. If you are tracking in Swarzschild coordinates, you run the risk of hitting a singularity at the event horizon. You need to change to Kruskal-Szekeres or Eddington-Finkelstein coordinates to ensure more correct physical interpretations of motion. 
 
@@ -172,4 +172,4 @@ We have shown how to **map a velocity vector** from a 2D plane \((u,v)\) to 3D \
 
 
 
-
+ -->
