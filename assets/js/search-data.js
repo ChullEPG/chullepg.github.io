@@ -65,11 +65,11 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-vector-pushforward-2d-sector-gt-3d-cone",
+            },{id: "post-rolling-2d-sectors-into-3d-cones-vector-pushforward",
       
-        title: "Vector Pushforward (2D sector -&gt; 3D cone)",
+        title: "Rolling 2D Sectors into 3D Cones (Vector Pushforward)",
       
-      description: "Description of pushforward vectors.",
+      description: "Explore how to transform 2D vector fields into 3D space with a step-by-step derivation of the pushforward and pullback processes.",
       section: "Posts",
       handler: () => {
         
