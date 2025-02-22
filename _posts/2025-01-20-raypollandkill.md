@@ -89,7 +89,8 @@ ray.shutdown()
 
 If workers get stuck and cannot free themselves, your script eventually runs out of free workers. Over time, tasks line up, and the script slows down -- or grinds to a halt. The built-in solution, ``ray.wait()``1, _will_ let you see which tasks are "done", but it does not necessarily kill unresponsive tasks that ignore polite termination signals. 
 
-**SIGTERM vs SIGKILL** \\
+**SIGTERM vs SIGKILL** 
+
 * SIGTERM: Polite. It knocks on the door of a process and waits for it to acknowledge SIGTERMs presence. However, this can be too polite. If your code is in an infinite loop or a blocking system call, it might never get around to acknowledging SIGTERM, so you end up with a zombie worker.  You will find these packages often lack built-in safeguards for interruption, i.e. they don't stop to check for termination signals. 
 * SIGKILL: Aggressive. SIGTERM does not knock -- it busts through the wall and terminates the process immediately, no chance for cleanup or final goodbyes. Some tasks might need ``SIGKILL`` if they are truly stuck in native C/C++ or certain system calls that ignore Python's interrupt signals. 
 
