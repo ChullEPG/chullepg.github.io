@@ -16,9 +16,7 @@ The essence of the approach is:
 2. Identify any tasks that have exceeded a maximum expected run time.
 3. Cancel the stuck tasks one-by-one with ray.cancel(task_ref, force=True) instead of cancelling the entire job or waiting forever.
 
-Below is a reference script, followed by a more detailed motivation and explanation.
-
-Example script (Motivation and explanation below): 
+Below is a reference script, followed by a more detailed motivation and explanation:
 
 ```python
 import ray
