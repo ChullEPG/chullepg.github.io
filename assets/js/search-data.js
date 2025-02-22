@@ -65,26 +65,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-pushforward",
+            },{id: "post-vector-pushforward-2d-sector-gt-3d-cone",
       
-        title: "Pushforward",
+        title: "Vector Pushforward (2D sector -&gt; 3D cone)",
       
       description: "Description of pushforward vectors.",
       section: "Posts",
       handler: () => {
         
-          window.location.href = "/blog/2015/pf/";
-        
-      },
-    },{id: "post-",
-      
-        title: "---",
-      
-      description: "----",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2015/notmath/";
+          window.location.href = "/blog/2025/pf/";
         
       },
     },{id: "news-a-simple-inline-announcement",
