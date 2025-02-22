@@ -76,6 +76,17 @@ ninja.data = [{
           window.location.href = "/blog/2025/pf/";
         
       },
+    },{id: "post-ray-poll-and-kill",
+      
+        title: "Ray Poll and Kill",
+      
+      description: "How to kill individual processes with Ray.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/raypollandkill/";
+        
+      },
     },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
