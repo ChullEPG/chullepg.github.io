@@ -70,7 +70,6 @@ In these cases, SIGTERM's ruthless older cousin SIGKILL is required. SIGKILL doe
 This brings us to ray.cancel()
 
 
-
 You can check if your system resources are being taken up using the ```top``` or ```htop``` commands. 
 
 
