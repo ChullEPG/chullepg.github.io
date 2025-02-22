@@ -87,7 +87,7 @@ ray.shutdown()
 
 **Motivation:**
 
-If workers get stuck and cannot free themselves, your script eventually runs out of free workers. Over time, tasks line up, and the script slows down -- or grinds to a halt. The built-in solution, ``ray.wait()``1, _will_ let you see which tasks are "done", but it does not necessarily kill unresponsive tasks that ignore polite termination signals. 
+If workers get stuck and cannot free themselves, your script eventually runs out of free workers. Over time, tasks line up, and the script slows down -- or grinds to a halt. The built-in solution, ``ray.wait()``, will let you see which tasks are "done", but it does not necessarily kill unresponsive tasks that ignore polite termination signals. 
 
 **SIGTERM vs SIGKILL** 
 
