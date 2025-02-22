@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ray Poll and Kill
-date: 2025-01-20 11:12:00-0000
+date: 2025-01-22 11:12:00-0000
 description: How to kill individual processes with Ray. 
 tags: code
 categories: programming
@@ -22,7 +22,7 @@ Below is a reference script, followed by a more detailed motivation and explanat
 import ray
 import time 
 import multiprocessing
-
+import random 
 
 # Polling timeout (after which a task is considered 'stuck')
 TIMEOUT = 100 
@@ -40,6 +40,7 @@ def maybe_hang(idx: int) -> str:
     if random.random() < 0.20: 
         while True:
             pass
+
     sleep_time = random.uniform(1,5)
     time.sleep(sleep_time)
     return f"Task {idx} completed in {sleep_time:.2f}s"
@@ -48,42 +49,44 @@ def maybe_hang(idx: int) -> str:
 task_refs = [maybe_hang.remote(i) for i in range(10)]
 
 # Track when each task started
+start_times = {}
 for ref in task_refs:
     start_times[ref] = time.time() 
 
-
+# Keep track of tasks that haven't finished/cancelled
 not_done = set(task_refs)
 
 # Main polling loop: 
 while not_done:  
-    done, not_done = ray.wait(task_refs, num_returns = 1, timeout = 1.0)
+    # Accumulate tasks to cancel each iteration 
+    to_cancel = []
+
+    done, pending = ray.wait(list(not_done), num_returns = 1, timeout = 1.0)
 
     # If any tasks have completed, remove them from not_done 
     for task_ref in done:
         # Attempt to retrieve the result
         try: 
-            ray.get(task_ref)
+            result = ray.get(task_ref)
+            print(result)
         except Exception as e:
-            print(f"Task {ref} failed with: {e}")
+            print(f"Task {task_ref} failed with: {e}")
         not_done.remove(task_ref)
 
-
     # Poll unfinished tasks
-    for task_ref in not_done:
-        elapsed_time = time.time() - start_times[ref]
+    for task_ref in list(not_done):
+        elapsed_time = time.time() - start_times[task_ref]
         if elapsed_time > TIMEOUT: 
             to_cancel.append(task_ref)
 
     # Cancel tasks that exceeded TIMEOUT 
     for task_ref in to_cancel:
-        print(f"Cancelling task {ref}") 
-        ray.cancel(task_ref)
-        futures.remove(task_ref)
+        print(f"Cancelling task {task_ref}") 
+        ray.cancel(task_ref, force = True) 
+        not_done.remove(task_ref)
 
 ray.shutdown()
 ```
-
-#### How it works
 
 **Motivation:**
 
